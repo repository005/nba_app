@@ -4,9 +4,10 @@ import style from './header.css';
 
 
 import FontAwesome from 'react-fontawesome';
+import SideNav from './SideNav/sideNav';
 
 
-const Header = () => {
+const Header = (props) => {
 
   const logo = () => (
     <Link className={style.logo} to="/">
@@ -16,7 +17,9 @@ const Header = () => {
 
   const navBars = () => (
      <div className={style.bars}>
+     <SideNav {...props} />
       <FontAwesome name="bars"
+        onClick={props.onOpenNav}
         style={{
           color: '#dfdfdf',
           padding: '10px',

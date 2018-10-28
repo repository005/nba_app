@@ -20,7 +20,7 @@ class NewsSlider extends Component {
 
   render() {
     return (
-      <SliderTemplates data={this.state.news}/>
+      <SliderTemplates data={this.state.news} type="featured"/>
     );
   }
 }

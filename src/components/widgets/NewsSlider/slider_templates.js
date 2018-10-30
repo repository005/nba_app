@@ -42,7 +42,6 @@ const SliderTemplates = (props) => {
     default:
     template = null;
   }
-
   
   return (
     <div>

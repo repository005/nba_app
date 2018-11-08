@@ -15,7 +15,7 @@ const Home = (props) => {
         }}
       />
       <NewsList
-        tyoe="card"
+        type="card"
         loadmore={true}
         start={3}
         amount={3}
